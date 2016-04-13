@@ -1,6 +1,6 @@
 package Proxy;
 
-import main.java.com.example.examplemod.ItemOne;
+import com.example.examplemod.ItemOne;
 
 public class ClientProxy extends CommonProxy
 {

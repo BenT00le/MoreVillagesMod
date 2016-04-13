@@ -1,4 +1,4 @@
-package main.java.com.example.examplemod;
+package com.example.examplemod;
 
 public class References {
     public static final String MODID = "examplemod";
@@ -6,4 +6,5 @@ public class References {
     public static final String VERSION = "1.8";
     public static final String ClientProxyClass = "Proxy.ClientProxy";
     public static final String ServerProxyClass = "Proxy.CommonProxy";
+
 }

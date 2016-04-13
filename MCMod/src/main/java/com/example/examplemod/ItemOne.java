@@ -1,8 +1,8 @@
-package main.java.com.example.examplemod;
+package com.example.examplemod;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
-import main.java.com.example.examplemod.References;
+import com.example.examplemod.References;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;;
 
