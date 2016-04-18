@@ -1,9 +1,10 @@
 package Proxy;
 
-import com.example.examplemod.ItemOne;
+import com.IntroToCS.MoreVillagesMod.ItemOne;
 
 public class ClientProxy extends CommonProxy
 {
+	//Registers the item's graphic in the game's directory
 	@Override
 	public void regesterRenders()
 	{
