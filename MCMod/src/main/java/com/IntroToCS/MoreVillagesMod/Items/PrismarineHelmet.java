@@ -1,32 +1,34 @@
-package com.IntroToCS.MoreVillagesMod;
+package com.IntroToCS.MoreVillagesMod.Items;
 
+import References.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
-public class ItemOne
+public class PrismarineHelmet
 {
-	public static Item Item_One;
+	//define item variable
+	public static Item Prismarine_Helmet;
 	//sets the name for the item
 	public static void init()
 	{
-		Item_One = new Item().setUnlocalizedName("An Item");
+		Prismarine_Helmet = new Item().setUnlocalizedName("Prismarine Helmet");
 	}
 	//registers the item in the game directory
 	public static void Register()
 	{
-		GameRegistry.registerItem(Item_One, Item_One.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(Prismarine_Helmet, Prismarine_Helmet.getUnlocalizedName().substring(5));
 	}
 	//Registers the item's graphic in the game's directory
 	public static void RegesterRenders()
 	{
-		RegesterRender(Item_One);
+		RegesterRender(Prismarine_Helmet);
 	}
 	// gets the file location for the item's graphic
 	public static void RegesterRender(Item item)
 	{
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item_One, 0, 
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Prismarine_Helmet, 0, 
 		new ModelResourceLocation(References.MODID+":"+item.getUnlocalizedName().substring(5), "inventory"));
 	}
 }

@@ -1,6 +1,6 @@
 package Proxy;
 
-import com.IntroToCS.MoreVillagesMod.ItemOne;
+import com.IntroToCS.MoreVillagesMod.Items.PrismarineHelmet;
 
 public class ClientProxy extends CommonProxy
 {
@@ -8,6 +8,6 @@ public class ClientProxy extends CommonProxy
 	@Override
 	public void regesterRenders()
 	{
-		ItemOne.RegesterRenders();
+		PrismarineHelmet.RegesterRenders();
 	}
 }
