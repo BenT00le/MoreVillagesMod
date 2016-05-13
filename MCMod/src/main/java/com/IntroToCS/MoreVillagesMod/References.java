@@ -1,4 +1,4 @@
-package References;
+package com.IntroToCS.MoreVillagesMod;
 
 public class References 
 {
