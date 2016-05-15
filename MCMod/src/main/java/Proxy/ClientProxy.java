@@ -2,7 +2,6 @@ package Proxy;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import com.IntroToCS.MoreVillagesMod.Items.ItemRegisterRenders;
-import com.IntroToCS.MoreVillagesMod.ItemOne;
 
 
 public class ClientProxy extends CommonProxy
@@ -14,6 +13,5 @@ public class ClientProxy extends CommonProxy
 		super.init(e);
 		
 		ItemRegisterRenders.registerItemRender();
-		ItemOne.RegesterRenders();
 	}
 }
