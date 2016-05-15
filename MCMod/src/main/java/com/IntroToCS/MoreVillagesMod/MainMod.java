@@ -32,7 +32,7 @@ public class MainMod
 	public static CommonProxy proxy;
 	@Instance(References.MODID) 
 	public static MainMod modInstance;
-	//prismarine tools initialized
+	//prismarine items initialized
 	public static Item Prismarine_pickaxe = new ItemPrismarinePickaxe("Prismarine_pickaxe",PrismarineTool);
 	public static Item Prismarine_sword = new ItemPrismarineSword("Prismarine_sword",PrismarineTool);
 	public static Item Prismarine_shovel = new ItemPrismarineShovel("Prismarine_shovel",PrismarineTool);
@@ -48,7 +48,7 @@ public class MainMod
     public void preInit(FMLPreInitializationEvent event)
     {	
     	//add villagers
-    	//VilagerRegister.mainRegistry();
+    	VilagerRegister.mainRegistry();
     	//prismarine tools registered
     	GameRegistry.registerItem(Prismarine_pickaxe,"Prismarine_pickaxe");    	
     	GameRegistry.registerItem(Prismarine_sword,"Prismarine_sword"); 
@@ -57,7 +57,7 @@ public class MainMod
     	GameRegistry.registerItem(Prismarine_hoe,"Prismarine_hoe"); 
     	//Bronze Tools registered
     	
-    	//Prismarine Armor
+    	//Register Prismarine Armor
     	GameRegistry.registerItem(PrismarineHelmet = new PrismarineArmor("Prismarine_helmet", PrismarineArmor,1,0),"Prismarine_helmet");
     	GameRegistry.registerItem(PrismarineChestPlate = new PrismarineArmor("Prismarine_chestplate", PrismarineArmor,1,1),"Prismarine_chestplate");
     	GameRegistry.registerItem(PrismarinePants = new PrismarineArmor("Prismarine_pants", PrismarineArmor,2,2),"Prismarine_pants");

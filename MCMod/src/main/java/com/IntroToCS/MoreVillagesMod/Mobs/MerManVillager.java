@@ -23,7 +23,6 @@ public class MerManVillager extends EntityVillager
 		this.tasks.addTask(0, new EntityAISwimming(this));
 		this.tasks.addTask(1, new EntityAIPanic(this,2.0D));
 		this.tasks.addTask(2, new EntityAIWander(this,1.3D));
-		this.tasks.addTask(3, new EntityAISwimming(this));
 	}
 	protected void applyEntityAttributes()
 	{

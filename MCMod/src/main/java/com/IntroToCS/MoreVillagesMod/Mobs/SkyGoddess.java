@@ -8,7 +8,7 @@ public class SkyGoddess extends EntityVillager
 {
 	public SkyGoddess(World worldIn) {
 		super(worldIn);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }

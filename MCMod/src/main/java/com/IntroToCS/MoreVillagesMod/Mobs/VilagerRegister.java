@@ -16,13 +16,14 @@ public class VilagerRegister
 	}
 	public static void registerEntity()
 	{
-		createEntity(MerManVillager.class,"Merman_Villager",0X0562F7,0X9E05F7);
+		createEntity(MerManVillager.class,"Merman",0X0562F7,0X9E05F7);
+		createEntity(SkyVillagerFemale.class,"Sky Woman",0XFFFFFF,0XFFBF00);
 	}
 	public static void createEntity(Class mobClass,String name,int solidColor,int spotColor)
 	{
 		int randID = EntityRegistry.findGlobalUniqueEntityId();
 		EntityRegistry.registerModEntity(mobClass, name, randID, MainMod.modInstance, 64, 1, true);
-		EntityRegistry.addSpawn(mobClass, 2, 0, 30, EnumCreatureType.WATER_CREATURE, BiomeGenBase.ocean);
+		EntityRegistry.addSpawn(mobClass, 10, 1, 30, EnumCreatureType.CREATURE, BiomeGenBase.ocean, BiomeGenBase.beach);
 		
 		createEgg(randID,solidColor,spotColor);
 	}

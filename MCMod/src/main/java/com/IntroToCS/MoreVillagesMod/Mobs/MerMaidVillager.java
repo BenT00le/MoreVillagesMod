@@ -7,7 +7,7 @@ public class MerMaidVillager extends EntityVillager
 {
 	public MerMaidVillager(World worldIn) {
 		super(worldIn);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }
