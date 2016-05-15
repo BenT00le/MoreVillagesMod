@@ -1,13 +1,19 @@
 package Proxy;
 
-import com.IntroToCS.MoreVillagesMod.Items.PrismarineHelmet;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import com.IntroToCS.MoreVillagesMod.Items.ItemRegisterRenders;
+import com.IntroToCS.MoreVillagesMod.ItemOne;
+
 
 public class ClientProxy extends CommonProxy
 {
 	//Registers the item's graphic in the game's directory
 	@Override
-	public void regesterRenders()
+	public void init(FMLInitializationEvent e)
 	{
-		PrismarineHelmet.RegesterRenders();
+		super.init(e);
+		
+		ItemRegisterRenders.registerItemRender();
+		ItemOne.RegesterRenders();
 	}
 }
