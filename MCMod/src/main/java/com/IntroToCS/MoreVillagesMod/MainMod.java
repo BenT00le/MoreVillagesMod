@@ -39,11 +39,15 @@ public class MainMod
 	public static Item Prismarine_axe = new ItemPrismarineAxe("Prismarine_axe",PrismarineTool);
 	public static Item Prismarine_hoe = new ItemPrismarineHoe("Prismarine_hoe",PrismarineTool);
 	public static Item PrismarineHelmet;
-	public static Item PrismarineChestPlate;
+	public static Item PrismarineChestPlate ;
 	public static Item PrismarinePants;
 	public static Item PrismarineBoots;
+	public static Item BronzeHelmet;
+	public static Item BronzeChestPlate ;
+	public static Item BronzePants;
+	public static Item BronzeBoots;
 	
-	
+	public static Item BronzeIngot;
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {	
@@ -63,6 +67,11 @@ public class MainMod
     	GameRegistry.registerItem(PrismarinePants = new PrismarineArmor("Prismarine_pants", PrismarineArmor,2,2),"Prismarine_pants");
     	GameRegistry.registerItem(PrismarineBoots = new PrismarineArmor("Prismarine_boots", PrismarineArmor,1,3),"Prismarine_boots");
     	
+    	//Register Bronze Armor
+    	GameRegistry.registerItem(BronzeHelmet = new BronzeArmor("Bronze_helmet", BronzeArmor,1,0),"Bronze_helmet");
+    	GameRegistry.registerItem(BronzeChestPlate = new BronzeArmor("Bronze_chestplate", BronzeArmor,1,1),"Bronze_chestplate");
+    	GameRegistry.registerItem(BronzePants = new BronzeArmor("Bronze_pants", BronzeArmor,2,2),"Bronze_pants");
+    	GameRegistry.registerItem(BronzeBoots = new BronzeArmor("Bronze_boots", BronzeArmor,1,3),"Bronze_boots");
     }
     @EventHandler
     public void init(FMLInitializationEvent event)
@@ -96,6 +105,23 @@ public class MainMod
     	GameRegistry.addRecipe(new ItemStack(Prismarine_hoe), new Object[]{" PP",
                                                                            " C ",
                                                                            " C ",'P',Items.prismarine_shard,'C',Items.prismarine_crystals});
+    	/*Bronze Helmet*/
+    	GameRegistry.addRecipe(new ItemStack(BronzeHelmet), new Object[]{"BBB",
+                														 "B B",
+                														 "   ",'B',BronzeIngot});
+    	/*Bronze ChestPlate*/
+    	GameRegistry.addRecipe(new ItemStack(BronzeChestPlate), new Object[]{"B B",
+				 															 "BBB",
+				 															 "BBB",'B',BronzeIngot});
+    	/*Bronze Pants*/
+    	GameRegistry.addRecipe(new ItemStack(BronzePants), new Object[]{"BBB",
+				 														"B B",
+				 														"B B",'B',BronzeIngot});
+    	/*Bronze Boots*/
+    	GameRegistry.addRecipe(new ItemStack(BronzeBoots), new Object[]{"   ",
+    																	"B B",
+    																	"B B",'B',BronzeIngot});
+ 
     	proxy.regesterRenders();
     }
     @EventHandler
