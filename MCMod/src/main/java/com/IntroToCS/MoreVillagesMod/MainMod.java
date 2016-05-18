@@ -47,7 +47,7 @@ public class MainMod
 	public static Item BronzePants;
 	public static Item BronzeBoots;
 	
-	public static Item BronzeIngot;
+	public static Item BronzeIngot=new BronzeIngot("BronzeIngot");
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {	
@@ -59,6 +59,8 @@ public class MainMod
     	GameRegistry.registerItem(Prismarine_shovel,"Prismarine_shovel"); 
     	GameRegistry.registerItem(Prismarine_axe,"Prismarine_axe"); 
     	GameRegistry.registerItem(Prismarine_hoe,"Prismarine_hoe"); 
+    	//Bronze Ingot
+    	GameRegistry.registerItem(BronzeIngot, "BronzeIngot");
     	//Bronze Tools registered
     	
     	//Register Prismarine Armor
@@ -84,7 +86,13 @@ public class MainMod
     			                                                                 "PPP",
     			                                                                 "PPP",'P',Items.prismarine_shard});
     	//prismarine pants
+    	GameRegistry.addRecipe(new ItemStack(PrismarinePants), new Object[]{"PPP",
+    																		"P P",
+    																  	    "P P",'P',Items.prismarine_shard});
     	//prismarine boots
+    	GameRegistry.addRecipe(new ItemStack(PrismarineBoots), new Object[]{"   ",
+                                                                            "P P",
+                                                                            "P P",'P',Items.prismarine_shard});
     	//prismarine helmet
     	GameRegistry.addRecipe(new ItemStack(PrismarineHelmet), new Object[]{"PPP",
     	                                                                     "P P", //each set of quotes is one row in a crafting table spaces represent empty slots
