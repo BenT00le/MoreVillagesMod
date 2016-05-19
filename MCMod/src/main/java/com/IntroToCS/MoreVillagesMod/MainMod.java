@@ -38,6 +38,11 @@ public class MainMod
 	public static Item Prismarine_shovel = new ItemPrismarineShovel("Prismarine_shovel",PrismarineTool);
 	public static Item Prismarine_axe = new ItemPrismarineAxe("Prismarine_axe",PrismarineTool);
 	public static Item Prismarine_hoe = new ItemPrismarineHoe("Prismarine_hoe",PrismarineTool);
+	public static Item Bronze_pickaxe = new itemBronzePickaxe("Bronze_pickaxe",BronzeTool);
+	public static Item Bronze_sword = new itemBronzeSword("Bronze_sword",BronzeTool);
+	public static Item Bronze_shovel = new itemBronzeShovel("Bronze_shovel",BronzeTool);
+	public static Item Bronze_axe = new itemBronzeAxe("Bronze_axe",BronzeTool);
+	public static Item Bronze_hoe = new itemBronzeHoe("Bronze_hoe",BronzeTool);
 	public static Item PrismarineHelmet;
 	public static Item PrismarineChestPlate ;
 	public static Item PrismarinePants;
