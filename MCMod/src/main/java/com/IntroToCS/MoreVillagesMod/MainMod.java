@@ -24,8 +24,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;;
 public class MainMod
 {
 	//add tool material properties **balancing
-	public static final Item.ToolMaterial PrismarineTool = EnumHelper.addToolMaterial("PrismarineTool",2,900,7.0f,6.5f, 25);
-	public static final Item.ToolMaterial BronzeTool = EnumHelper.addToolMaterial("BronzeTool",2,1200,7.5f,7.0f, 15);
+	public static final Item.ToolMaterial PrismarineTool = EnumHelper.addToolMaterial("PrismarineTool",2,900,7.0f,2.5f, 25);
+	public static final Item.ToolMaterial BronzeTool = EnumHelper.addToolMaterial("BronzeTool",2,1200,7.5f,2.7f, 15);
 	public static final ArmorMaterial PrismarineArmor = EnumHelper.addArmorMaterial("PrismarineArmor", "mvm:PrismarineArmor", 24, new int[]{1,7,6,2}, 29);
 	public static final ArmorMaterial BronzeArmor = EnumHelper.addArmorMaterial("BronzeArmor", "mvm:BronzeArmor", 29, new int[]{3,7,5,3}, 17);
 	@SidedProxy(clientSide = References.ClientProxyClass,serverSide = References.ServerProxyClass) 
@@ -38,6 +38,11 @@ public class MainMod
 	public static Item Prismarine_shovel = new ItemPrismarineShovel("Prismarine_shovel",PrismarineTool);
 	public static Item Prismarine_axe = new ItemPrismarineAxe("Prismarine_axe",PrismarineTool);
 	public static Item Prismarine_hoe = new ItemPrismarineHoe("Prismarine_hoe",PrismarineTool);
+	public static Item Bronze_pickaxe = new itemBronzePickaxe("Bronze_pickaxe",BronzeTool);
+	public static Item Bronze_sword = new itemBronzeSword("Bronze_sword",BronzeTool);
+	public static Item Bronze_shovel = new itemBronzeShovel("Bronze_shovel",BronzeTool);
+	public static Item Bronze_axe = new itemBronzeAxe("Bronze_axe",BronzeTool);
+	public static Item Bronze_hoe = new itemBronzeHoe("Bronze_hoe",BronzeTool);
 	public static Item PrismarineHelmet;
 	public static Item PrismarineChestPlate ;
 	public static Item PrismarinePants;
@@ -68,7 +73,10 @@ public class MainMod
     	GameRegistry.registerItem(PrismarineChestPlate = new PrismarineArmor("Prismarine_chestplate", PrismarineArmor,1,1),"Prismarine_chestplate");
     	GameRegistry.registerItem(PrismarinePants = new PrismarineArmor("Prismarine_pants", PrismarineArmor,2,2),"Prismarine_pants");
     	GameRegistry.registerItem(PrismarineBoots = new PrismarineArmor("Prismarine_boots", PrismarineArmor,1,3),"Prismarine_boots");
-    	
+    	PrismarineHelmet.setUnlocalizedName("PrismarineHelmet");
+    	PrismarineChestPlate.setUnlocalizedName("PrismarineChestPlate");
+    	PrismarinePants.setUnlocalizedName("PrismainePants");
+    	PrismarineBoots.setUnlocalizedName("PrismarineBoots");
     	//Register Bronze Armor
     	GameRegistry.registerItem(BronzeHelmet = new BronzeArmor("Bronze_helmet", BronzeArmor,1,0),"Bronze_helmet");
     	GameRegistry.registerItem(BronzeChestPlate = new BronzeArmor("Bronze_chestplate", BronzeArmor,1,1),"Bronze_chestplate");

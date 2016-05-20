@@ -16,6 +16,10 @@ public class ItemRegisterRenders
 		reg(MainMod.Prismarine_sword);
 		reg(MainMod.Prismarine_hoe);
 		reg(MainMod.BronzeIngot);
+		reg(MainMod.PrismarineHelmet);
+		reg(MainMod.PrismarineChestPlate);
+		reg(MainMod.PrismarinePants);
+		reg(MainMod.PrismarineBoots);
 	}
 	public static void reg(Item i)
 	{
