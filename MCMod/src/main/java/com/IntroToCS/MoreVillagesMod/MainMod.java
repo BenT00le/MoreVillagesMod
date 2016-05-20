@@ -24,8 +24,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;;
 public class MainMod
 {
 	//add tool material properties **balancing
-	public static final Item.ToolMaterial PrismarineTool = EnumHelper.addToolMaterial("PrismarineTool",2,900,7.0f,6.5f, 25);
-	public static final Item.ToolMaterial BronzeTool = EnumHelper.addToolMaterial("BronzeTool",2,1200,7.5f,7.0f, 15);
+	public static final Item.ToolMaterial PrismarineTool = EnumHelper.addToolMaterial("PrismarineTool",2,900,7.0f,2.5f, 25);
+	public static final Item.ToolMaterial BronzeTool = EnumHelper.addToolMaterial("BronzeTool",2,1200,7.5f,2.7f, 15);
 	public static final ArmorMaterial PrismarineArmor = EnumHelper.addArmorMaterial("PrismarineArmor", "mvm:PrismarineArmor", 24, new int[]{1,7,6,2}, 29);
 	public static final ArmorMaterial BronzeArmor = EnumHelper.addArmorMaterial("BronzeArmor", "mvm:BronzeArmor", 29, new int[]{3,7,5,3}, 17);
 	@SidedProxy(clientSide = References.ClientProxyClass,serverSide = References.ServerProxyClass) 
@@ -73,7 +73,10 @@ public class MainMod
     	GameRegistry.registerItem(PrismarineChestPlate = new PrismarineArmor("Prismarine_chestplate", PrismarineArmor,1,1),"Prismarine_chestplate");
     	GameRegistry.registerItem(PrismarinePants = new PrismarineArmor("Prismarine_pants", PrismarineArmor,2,2),"Prismarine_pants");
     	GameRegistry.registerItem(PrismarineBoots = new PrismarineArmor("Prismarine_boots", PrismarineArmor,1,3),"Prismarine_boots");
-    	
+    	PrismarineHelmet.setUnlocalizedName("PrismarineHelmet");
+    	PrismarineChestPlate.setUnlocalizedName("PrismarineChestPlate");
+    	PrismarinePants.setUnlocalizedName("PrismainePants");
+    	PrismarineBoots.setUnlocalizedName("PrismarineBoots");
     	//Register Bronze Armor
     	GameRegistry.registerItem(BronzeHelmet = new BronzeArmor("Bronze_helmet", BronzeArmor,1,0),"Bronze_helmet");
     	GameRegistry.registerItem(BronzeChestPlate = new BronzeArmor("Bronze_chestplate", BronzeArmor,1,1),"Bronze_chestplate");
