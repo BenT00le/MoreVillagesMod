@@ -67,7 +67,11 @@ public class MainMod
     	//Bronze Ingot
     	GameRegistry.registerItem(BronzeIngot, "BronzeIngot");
     	//Bronze Tools registered
-    	
+    	GameRegistry.registerItem(Bronze_pickaxe,"Bronze_pickaxe");    	
+    	GameRegistry.registerItem(Bronze_sword,"Bronze_sword"); 
+    	GameRegistry.registerItem(Bronze_shovel,"Bronze_shovel"); 
+    	GameRegistry.registerItem(Bronze_axe,"Bronze_axe"); 
+    	GameRegistry.registerItem(Bronze_hoe,"Bronze_hoe"); 
     	//Register Prismarine Armor
     	GameRegistry.registerItem(PrismarineHelmet = new PrismarineArmor("Prismarine_helmet", PrismarineArmor,1,0),"Prismarine_helmet");
     	GameRegistry.registerItem(PrismarineChestPlate = new PrismarineArmor("Prismarine_chestplate", PrismarineArmor,1,1),"Prismarine_chestplate");

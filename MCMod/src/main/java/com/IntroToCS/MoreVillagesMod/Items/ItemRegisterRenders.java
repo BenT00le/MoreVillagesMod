@@ -15,6 +15,11 @@ public class ItemRegisterRenders
 		reg(MainMod.Prismarine_shovel);
 		reg(MainMod.Prismarine_sword);
 		reg(MainMod.Prismarine_hoe);
+		reg(MainMod.Bronze_axe);
+		reg(MainMod.Bronze_hoe);
+		reg(MainMod.Bronze_pickaxe);
+		reg(MainMod.Bronze_shovel);
+		reg(MainMod.Bronze_sword);
 		reg(MainMod.BronzeIngot);
 		reg(MainMod.PrismarineHelmet);
 		reg(MainMod.PrismarineChestPlate);
