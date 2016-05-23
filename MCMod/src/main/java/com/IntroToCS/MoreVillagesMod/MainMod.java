@@ -52,7 +52,7 @@ public class MainMod
 	public static Item BronzePants;
 	public static Item BronzeBoots;
 	
-	public static Item BronzeIngot=new BronzeIngot("BronzeIngot");
+	public static Item BronzeIngot = new BronzeIngot("BronzeIngot");
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {	
