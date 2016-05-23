@@ -52,7 +52,7 @@ public class MainMod
 	public static Item BronzePants;
 	public static Item BronzeBoots;
 	
-	public static Item BronzeIngot = new BronzeIngot("BronzeIngot");
+	public static Item BronzeIngot=new BronzeIngot("BronzeIngot");
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {	
@@ -121,6 +121,24 @@ public class MainMod
     	GameRegistry.addRecipe(new ItemStack(Prismarine_hoe), new Object[]{" PP",
                                                                            " C ",
                                                                            " C ",'P',Items.prismarine_shard,'C',Items.prismarine_crystals});
+    	
+    	/*bronze pickaxe*/		                                         
+    	GameRegistry.addRecipe(new ItemStack(Bronze_pickaxe), new Object[]{"BBB",
+    			                                                           " S ", 
+    			                                                           " S ",'B',BronzeIngot,'S',Items.stick});
+    	/*bronze sword*/                                                  
+    	GameRegistry.addRecipe(new ItemStack(Bronze_sword), new Object[]{" B ",
+                                                                         " B ",
+        /*bronze shovel*/                                                " S ",'B',BronzeIngot,'S',Items.stick});
+    	GameRegistry.addRecipe(new ItemStack(Bronze_shovel), new Object[]{" B ",
+                                                                          " S ",
+        /*bronze axe*/                                                    " S ",'B',BronzeIngot,'S',Items.stick});
+    	GameRegistry.addRecipe(new ItemStack(Bronze_axe), new Object[]{" BB",
+                                                                       " SB",
+        /*bronze hoe*/                                                 " S ",'B',BronzeIngot,'S',Items.stick});
+    	GameRegistry.addRecipe(new ItemStack(Bronze_hoe), new Object[]{" BB",
+                                                                       " S ",
+                                                                       " S ",'B',BronzeIngot,'S',Items.stick});
     	/*Bronze Helmet*/
     	GameRegistry.addRecipe(new ItemStack(BronzeHelmet), new Object[]{"BBB",
                 														 "B B",
