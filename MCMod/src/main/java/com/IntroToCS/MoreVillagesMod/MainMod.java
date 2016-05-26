@@ -1,16 +1,30 @@
 package com.IntroToCS.MoreVillagesMod;
 
 
-import com.IntroToCS.MoreVillagesMod.Items.*;
+import com.IntroToCS.MoreVillagesMod.Items.BronzeArmor;
+import com.IntroToCS.MoreVillagesMod.Items.BronzeIngot;
+import com.IntroToCS.MoreVillagesMod.Items.ItemPrismarineAxe;
+import com.IntroToCS.MoreVillagesMod.Items.ItemPrismarineHoe;
+import com.IntroToCS.MoreVillagesMod.Items.ItemPrismarinePickaxe;
+import com.IntroToCS.MoreVillagesMod.Items.ItemPrismarineShovel;
+import com.IntroToCS.MoreVillagesMod.Items.ItemPrismarineSword;
+import com.IntroToCS.MoreVillagesMod.Items.ItemRegisterRenders;
+import com.IntroToCS.MoreVillagesMod.Items.PrismarineArmor;
+import com.IntroToCS.MoreVillagesMod.Items.itemBronzeAxe;
+import com.IntroToCS.MoreVillagesMod.Items.itemBronzeHoe;
+import com.IntroToCS.MoreVillagesMod.Items.itemBronzePickaxe;
+import com.IntroToCS.MoreVillagesMod.Items.itemBronzeShovel;
+import com.IntroToCS.MoreVillagesMod.Items.itemBronzeSword;
 import com.IntroToCS.MoreVillagesMod.Mobs.VilagerRegister;
 
 import Proxy.CommonProxy;
-import com.IntroToCS.MoreVillagesMod.References;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.gen.structure.StructureStart;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -18,7 +32,8 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import scala.tools.nsc.doc.doclet.Generator;;
 
 @Mod(modid = References.MODID, name = References.ModName, version = References.VERSION)
 public class MainMod
@@ -32,6 +47,7 @@ public class MainMod
 	public static CommonProxy proxy;
 	@Instance(References.MODID) 
 	public static MainMod modInstance;
+	public static IWorldGenerator VilageGen = new VillageGenerate(); 
 	//prismarine items initialized
 	public static Item Prismarine_pickaxe = new ItemPrismarinePickaxe("Prismarine_pickaxe",PrismarineTool);
 	public static Item Prismarine_sword = new ItemPrismarineSword("Prismarine_sword",PrismarineTool);
@@ -90,6 +106,7 @@ public class MainMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+    	GameRegistry.registerWorldGenerator(VilageGen, 1);
     	ItemRegisterRenders.registerItemRender();
     	//creates a crafting recipes
     	/*Prismarine Armor*/  
