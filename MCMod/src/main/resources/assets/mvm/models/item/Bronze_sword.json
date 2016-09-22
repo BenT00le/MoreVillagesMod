@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/Bronze_sword"
+        "layer0": "mvm:items/Bronze_sword"
     },
     "display": {
         "thirdperson": {

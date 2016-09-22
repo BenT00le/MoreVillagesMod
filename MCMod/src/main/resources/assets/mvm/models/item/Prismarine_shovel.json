@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/Prismarine_shovel"
+        "layer0": "mvm:items/Prismarine_shovel"
     },
     "display": {
         "thirdperson": {

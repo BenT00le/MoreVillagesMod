@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/Bronze_shovel"
+        "layer0": "mvm:items/Bronze_shovel"
     },
     "display": {
         "thirdperson": {

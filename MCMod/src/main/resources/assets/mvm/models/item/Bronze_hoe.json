@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/Bronze_hoe"
+        "layer0": "mvm:items/Bronze_hoe"
     },
     "display": {
         "thirdperson": {

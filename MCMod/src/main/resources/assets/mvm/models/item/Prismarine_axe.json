@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/Prismarine_axe"
+        "layer0": "mvm:items/Prismarine_axe"
     },
     "display": {
         "thirdperson": {

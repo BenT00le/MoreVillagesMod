@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "items/Prismarine_hoe"
+        "layer0": "mvm:items/Prismarine_hoe"
     },
     "display": {
         "thirdperson": {
